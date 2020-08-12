@@ -46,6 +46,8 @@ yarn dev
 
 Check console for website (usually http://localhost:8080)
 
+You may use it in LAN as well (there should be another address listed)
+
 Please press check button to check if it is ready. 
 
 #### API
@@ -53,6 +55,35 @@ Please press check button to check if it is ready.
 ```bash
 yarn websocket
 ```
+
+##### API docs
+
+###### Status
+
+> Request
+```json
+{ "command" : 0, "data": "" }
+```
+
+> Response
+```json
+{ "command" : 0, "status": true/false }
+```
+
+###### Level
+
+> Request: data should be in range 0-15
+```json
+{ "command" : 1, "data": "0" }
+```
+
+> Response
+No response if success, or 
+
+```json
+{ "status": false, "message": "{Error Message}"}
+```
+
 
 ## Note
 
