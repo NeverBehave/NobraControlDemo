@@ -1,10 +1,13 @@
 {
-  "dependencies": {
-    "bluetooth-serial-port": "^2.2.7",
-    "readline-sync": "^1.4.10"
-  },
   "scripts": {
-    "start": "node index.js"
+    "postinstall": "(cd api && yarn); (cd web && yarn)",
+    "websocket": "cd api && yarn websocket",
+    "commandLine": "cd api && yarn commandLine",
+    "web": "cd web && yarn serve",
+    "dev": "concurrently \"yarn websocket\" \"yarn web\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
   },
   "license": "MIT"
 }

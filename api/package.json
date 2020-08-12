@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "bluetooth-serial-port": "^2.2.7",
+    "readline-sync": "^1.4.10",
+    "ws": "^7.3.1"
+  },
+  "scripts": {
+    "commandLine": "node commandLine.js",
+    "websocket": "node ws.js"
+  },
+  "license": "MIT"
+}
