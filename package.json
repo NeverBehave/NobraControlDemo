@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bluetooth-serial-port": "^2.2.7",
+    "readline-sync": "^1.4.10"
+  }
+}
