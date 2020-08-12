@@ -1,7 +1,7 @@
 const btSerial = new (require('bluetooth-serial-port')).BluetoothSerialPort();
 const levels = ['p', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 const readline = require('readline');
-const DEVICE_NAME = 'Nobra Contro'
+const DEVICE_NAME = 'Nobra Control'
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -48,7 +48,7 @@ btSerial.on('found', (address, name) => {
                         if (err) console.log(err);
                     });
                     if (str.indexOf('NoBra') === -1) {
-                        console.info(`[Verification] Still Waiting for verification, received: ${str}`)
+                        console.info(`[Verification] Still waiting for verification, received: ${str}`)
                     } else {
                         clearInterval(task)
                         console.info(`[Connected] verified! Hi, ${str}`)
