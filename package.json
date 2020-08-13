@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "postinstall": "(cd api && yarn); (cd web && yarn)",
+    "postinstall": "(cd api && yarn); (cd web && yarn); (cd buttplug-node-bluetooth-classic-manager && yarn)",
     "websocket": "cd api && yarn websocket",
     "commandLine": "cd api && yarn commandLine",
     "web": "cd web && yarn serve",
-    "dev": "concurrently \"yarn websocket\" \"yarn web\""
+    "dev": "concurrently \"yarn websocket\" \"yarn web\"",
+    "buttplug": "cd api && yarn buttplug"
   },
   "devDependencies": {
     "concurrently": "^5.3.0"

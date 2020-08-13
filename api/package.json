@@ -1,12 +1,16 @@
 {
   "dependencies": {
     "bluetooth-serial-port": "^2.2.7",
+    "buttplug": "^0.13.1",
+    "buttplug-node-websockets": "^0.13.2",
     "readline-sync": "^1.4.10",
-    "ws": "^7.3.1"
+    "ws": "^7.3.1",
+    "buttplug-node-bluetooth-classic-manager": "link:../buttplug-node-bluetooth-classic-manager"
   },
   "scripts": {
     "commandLine": "node commandLine.js",
-    "websocket": "node ws.js"
+    "websocket": "node ws.js",
+    "buttplug": "node buttplug.js"
   },
   "license": "MIT"
 }

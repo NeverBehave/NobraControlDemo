@@ -53,36 +53,10 @@ Please press check button to check if it is ready.
 #### API
 
 ```bash
-yarn websocket
+yarn buttplug
 ```
 
-##### API docs
-
-###### Status
-
-> Request
-```json
-{ "command" : 0, "data": "" }
-```
-
-> Response
-```json
-{ "command" : 0, "status": true/false }
-```
-
-###### Level
-
-> Request: data should be in range 0-15
-```json
-{ "command" : 1, "data": "0" }
-```
-
-> Response
-No response if success, or 
-
-```json
-{ "status": false, "message": "{Error Message}"}
-```
+This will start a local buttplug websocket server, but only for Nobra Control for now.
 
 
 ## Note
