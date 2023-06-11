@@ -2,9 +2,11 @@
 
 ## Background
 
-I have tried [intiface](https://github.com/intiface/intiface-desktop) (config added), and [noble](https://github.com/noble/noble) directly, but no luck. Both of them cannot found the device.
+**It is now supported by Buttplug: https://github.com/buttplugio/buttplug/pull/495**
 
-It turns out that Nobra Digital Control Box is BTClassic, Oops. Currently, https://buttplug.io does not support such protocal.
+~~I have tried [intiface](https://github.com/intiface/intiface-desktop) (config added), and [noble](https://github.com/noble/noble) directly, but no luck. Both of them cannot found the device.~~
+
+~~It turns out that Nobra Digital Control Box is BTClassic, Oops. Currently, https://buttplug.io does not support such protocal.~~
 
 ## Get started
 
